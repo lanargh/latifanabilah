@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Estimation | Latifa Nabila H</title>
+    <meta name="description" content="Selected publications of DL-based Blood Pressure Estimation ">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .publication-list {
+            margin-top: var(--spacing-lg);
+        }
+
+        .publication-item {
+            background-color: var(--card-bg);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            margin-bottom: var(--spacing-md);
+            border: 1px solid transparent;
+            transition: transform 0.3s ease;
+        }
+
+        .publication-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(192, 133, 82, 0.3);
+        }
+
+        .pub-title {
+            font-size: 1.25rem;
+            color: var(--text-color);
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+        }
+
+        .pub-authors {
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+            margin-bottom: var(--spacing-sm);
+            font-style: italic;
+        }
+
+        .pub-venue {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-md);
+            display: inline-block;
+        }
+
+        .back-nav {
+            padding: var(--spacing-lg) 0;
+        }
+
+        .back-link {
+            color: var(--secondary-text);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Latifa Nabila H</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section container" style="padding-top: 15vh;"> <!-- Added padding for fixed header -->
+            <div class="back-nav fade-in">
+                <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+            </div>
+
+            <h1 class="section-title fade-in">DL-based Blood Pressure Monitoring System</h1>
+            <p class="hero-subtitle fade-in" style="margin-left: 0; max-width: 100%;"></p>
+
+            <p class="hero-subtitle fade-in" style="margin-left: 0; max-width: 100%;">Abstract</p>
+            <div class="abstract">
+                <p>This research explores the efficacy of personalized deep learning-based BP estimation systems in
+                    several
+                    settings. First, we
+                    develop an LSTM model for estimating systolic BP (SBP) and diastolic BP (DBP) values from a feature
+                    set
+                    extracted from electrocardiogram (ECG) and photoplethysmogram (PPG) signals. Although this model
+                    could
+                    outperform the
+                    traditional machine learning models, we came up with a simpler architecture, a deep FCNN model, to
+                    estimate BP from a feature set extracted from PPG signal only, which not
+                    only performs better but also justify the practicality of an ECG-free system. Second, we
+                    introduce a feature engineering-free BP estimation system by utilizing CNN as the automatic feature
+                    extraction in our model. This approach is taken to tackle the problem of feature
+                    extraction failure due to heavy noises on the signal. Lastly, a real-time BP estimation
+                    mobile and watch application is presented in this research, providing feasibility on its
+                    development.
+                    Overall, this research's findings supported the notion that deep learning techniques
+                    used for cuffless BP estimation could enhance and expand existing regression models,
+                    open up new research opportunities, and contribute in the building of real-time health
+                    monitoring applications.</p>
+            </div>
+
+            <!-- Video Section -->
+            <p class="hero-subtitle fade-in" style="margin-left: 0; max-width: 100%; margin-top: var(--spacing-lg);">
+                Video Demo</p>
+            <div class="video-container fade-in" style="margin-bottom: var(--spacing-xl);">
+                <video controls
+                    style="width: 100%; max-width: 800px; border-radius: 8px; display: block; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <source src="assets/BP Est on Android demo - SD 480p.mov" type="video/quicktime">
+                    <source src="assets/BP Est on Android demo - SD 480p.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p
+                    style="text-align: center; color: var(--secondary-text); margin-bottom: var(--spacing-sm); font-weight: 600;">
+                    Credit: Latifa Nabila H</p>
+            </div>
+
+
+            <p class="hero-subtitle fade-in" style="margin-left: 0; max-width: 100%;">Pipeline</p>
+            <div class="pipeline-container fade-in" style="margin-bottom: var(--spacing-xl);">
+                <img src="assets/pipeline.png" alt="Pipeline"
+                    style="width: 100%; max-width: 800px; border-radius: 8px; display: block; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            </div>
+
+            <p class="hero-subtitle fade-in" style="margin-left: 0; max-width: 100%;">Selected publications</p>
+            <div class="publication-list">
+                <!-- Paper 1 -->
+                <article class="publication-item fade-in">
+                    <h3 class="pub-title">Real-Time Cuffless Continuous Blood Pressure Estimation Using Deep Learning
+                        Model</h3>
+                    <p class="pub-authors">Yung-Hui Li, Latifa Nabila Harfiya, Kartika Purwandari, Yue-Der Lin*</p>
+                    <span class="pub-venue">Sensors (Basel), 2020</span>
+                    <div class="pub-actions">
+                        <a href="https://www.mdpi.com/1424-8220/20/19/5602" target="_blank" class="btn btn-outline"
+                            style="margin-left: 0; padding: 0.5rem 1rem; font-size: 0.9rem;">View Paper</a>
+                    </div>
+                </article>
+
+                <!-- Paper 2 -->
+                <article class="publication-item fade-in">
+                    <h3 class="pub-title">Generalized Deep Neural Network Model for Cuffless Blood Pressure Estimation
+                        with Photoplethysmogram Signal Only</h3>
+                    <p class="pub-authors">Yan-Cheng Hsu, Yung-Hui Li, Ching-Chun Chang,Latifa Nabila Harfiya*</p>
+                    <span class="pub-venue">Sensors (Basel), 2020</span>
+                    <div class="pub-actions">
+                        <!-- Generic search link if direct link is uncertain, or specific if found. Using search for safety on minor variation -->
+                        <a href="https://scholar.google.com/scholar?q=Generalized+Deep+Neural+Network+Model+for+Cuffless+Blood+Pressure+Estimation+with+Photoplethysmogram+Signal+Only"
+                            target="_blank" class="btn btn-outline"
+                            style="margin-left: 0; padding: 0.5rem 1rem; font-size: 0.9rem;">View Paper</a>
+                    </div>
+                </article>
+
+                <!-- Paper 3 -->
+                <article class="publication-item fade-in">
+                    <h3 class="pub-title">Continuous Blood Pressure Estimation Using Exclusively Photopletysmography by
+                        LSTM-Based Signal-to-Signal Translation</h3>
+                    <p class="pub-authors">Latifa Nabila Harfiya, Ching-Chun Chang, Yung-Hui Li
+                    </p>
+                    <span class="pub-venue">Sensors (Basel), 2021</span>
+                    <div class="pub-actions">
+                        <a href="https://scholar.google.com/scholar?q=Continuous+Blood+Pressure+Estimation+Using+Exclusively+Photopletysmography+by+LSTM-Based+Signal-to-Signal+Translation"
+                            target="_blank" class="btn btn-outline"
+                            style="margin-left: 0; padding: 0.5rem 1rem; font-size: 0.9rem;">View Paper</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p>&copy; 2025 Latifa Nabila H. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
